@@ -23,7 +23,7 @@ async function checkWeather() {
   const response = await fetch(api_url + `&appid=${api_key}`);
   if (response.status == 404) {
     p.style.display = "block";
-    // document.querySelector(".weather").style.display = "none";
+     document.querySelector(".weather").style.display = "none";
   } else {
     const data = await response.json();
 
